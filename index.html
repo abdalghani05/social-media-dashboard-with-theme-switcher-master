@@ -7,60 +7,92 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header id="header"></header>
     <div class="container">
-        <div class="socie">
+        <div class="sociel">
             <div class="text">
                 <h1 id="text">Social Media Dashboard</h1>
-                <p>Total Followers: 23,004</p>
+                <p id="total">Total Followers: 23,004</p>
             </div>
             <div class="btn">
-                <p>Dark Mode</p>
-                <input type="radio" id="btn">
+                <p id="dark">Dark Mode</p>
+                <input type="radio" id="btn" onclick="darkmode()">
             </div>
-            <div class="box">
-
-            </div>
-            <div class="box">
-
-            </div>
-            <div class="box">
-
-            </div>
-            <div class="box">
-
-            </div>
+            <a href="#" class="box" style="border-top: 3px solid #188FF3;">
+                <p class="tage"><img src="images/icon-facebook.svg" alt=""> @nathanf</p>
+                <p class="num"><strong>1987</strong><br>FOLLOWERS</p>
+                <p class="up"><img src="images/icon-up.svg" alt=""> 12 Today</p>
+            </a>
+            <a href="#" class="box" style="border-top: 3px solid #2C9DE0;">
+                <p class="tage"><img src="images/icon-twitter.svg" alt=""> @nathanf</p>
+                <p class="num"><strong>1044</strong><br>FOLLOWERS</p>
+                <p class="up"><img src="images/icon-up.svg" alt=""> 99 Today</p>
+            </a>
+            <a href="#" class="box" style="border-top: 3px solid transparent;    border-image: linear-gradient(to left,#D95492,#FFBF68);border-image-slice: 1;">
+                <p class="tage"><img src="images/icon-instagram.svg" alt=""> @realnathanf</p>
+                <p class="num"><strong>11K</strong><br>FOLLOWERS</p>
+                <p class="up"><img src="images/icon-up.svg" alt=""> 1099 Today</p>
+            </a>
+            <a href="#" class="box" style="border-top: 3px solid #C30028;">
+                <p class="tage"><img src="images/icon-youtube.svg" alt=""> Nathan F.</p>
+                <p class="num"><strong>8239</strong><br>SUBSCRIBERS</p>
+                <p class="up" style="color: #DC414C;"><img src="images/icon-down.svg" alt=""> 144 Today</p>
+            </a>
         </div>
         <div class="overiew"> 
             <div class="text">
-                <h2 id="text">Overview-Today</h2>
+                <h2 id="text2">Overview-Today</h2>
             </div>
-            <div class="box">
-
-            </div>
-            <div class="box">
-
-            </div>
-            <div class="box">
-
-            </div>
-            <div class="box">
-
-            </div>
-            <div class="box">
-
-            </div>
-            <div class="box">
-
-            </div>
-            <div class="box">
-
-            </div>
-            <div class="box">
-
-            </div>
+            <a href="#" class="box">
+                <p class="type">Page Views</p>
+                <img src="images/icon-facebook.svg" alt="">
+                <b>87</b>
+                <p style="color: #1EB589;"><img src="images/icon-up.svg" alt=""> 3%</p>
+            </a>
+            <a href="#"  class="box">
+                <p class="type">Likes</p>
+                <img src="images/icon-facebook.svg" alt="">
+                <b>52</b>
+                <p style="color: #C30028;"><img src="images/icon-down.svg" alt=""> 2%</p>
+            </a>
+            <a href="#"  class="box">
+                <p class="type">Likes</p>
+                <img src="images/icon-instagram.svg" alt="">
+                <b>87</b>
+                <p style="color: #1EB589;"><img src="images/icon-up.svg" alt=""> 2257%</p>
+            </a>
+            <a href="#"  class="box">
+                <p class="type">Profile Views</p>
+                <img src="images/icon-instagram.svg" alt="">
+                <b>52K</b>
+                <p style="color: #1EB589;"><img src="images/icon-up.svg" alt=""> 1375%</p>
+            </a>
+            <a href="#"  class="box">
+                <p class="type">Retweets</p>
+                <img src="images/icon-twitter.svg" alt="">
+                <b>117</b>
+                <p style="color: #1EB589;"><img src="images/icon-up.svg" alt=""> 303%</p>
+            </a>
+            <a href="#"  class="box">
+                <p class="type">Likes</p>
+                <img src="images/icon-twitter.svg" alt="">
+                <b>507</b>
+                <p style="color: #1EB589;"><img src="images/icon-up.svg" alt=""> 553%</p>
+            </a>
+            <a href="#"  class="box">
+                <p class="type">Likes</p>
+                <img src="images/icon-youtube.svg" alt="">
+                <b>107</b>
+                <p style="color: #C30028;"><img src="images/icon-down.svg" alt=""> 19%</p>
+            </a>
+            <a href="#"  class="box">
+                <p class="type">Total Views</p>
+                <img src="images/icon-youtube.svg" alt="">
+                <b>1407</b>
+                <p style="color: #C30028;"><img src="images/icon-down.svg" alt=""> 12%</p>
+            </a>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>

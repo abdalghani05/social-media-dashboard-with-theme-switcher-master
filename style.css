@@ -1,31 +1,93 @@
-body{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows:minmax(10px,auto);
-    grid-row-gap: 10px;
+*{
+    margin: 0;
+    padding: 0;
 }
+header{
+    width: 100%;
+    height: 35%;
+    background-color: #F8F9FE;
+    border-bottom-left-radius:30px;
+    border-bottom-right-radius:30px ;
+    position: absolute;
+}
+.header{
+    background-color: #20222F !important;
+}
+#total{
+    color: #6E7180;
+}
+/*mode normal*/
 .container{
     width: 80%;
-    height: 80vh;
     position: absolute;
+    padding: 20px 0;
+    margin: 20px 0;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    font-family: sans-serif;
 }
-.socie,.overiew{
+.sociel,.overiew{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-auto-rows: minmax(50px,auto);
-    grid-gap: 10px;
+    grid-gap: 30px 30px;
 }
 .box{
-    background-color: #111;
+    background-color: #F0F3FA;
+    text-decoration: none;
 }
-.socie .text{
+.box:hover{
+    background-color: #E1E3F0;
+}
+.sociel .text{
     grid-column: 1/4;
+}
+.sociel .box{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(50px,auto);
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+}
+.sociel .box strong{
+    font-size:40px;
+    color: #000;
+}
+.sociel .box .tage{
+    font-size: 14px;
+    font-weight: bold;
+    color: #93969E;
+}
+.sociel .box .num{
+    font-size: small;
+    color: #93969E;
+}
+.sociel .box .up{
+    color: #1EB589;
+    font-size: 12px;
+    font-weight: 500;
 }
 .overiew .text{
     grid-column: 1/5; 
+    padding-top: 5%;
+}
+.overiew .box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(50px,auto);
+    align-items: center;
+    justify-items: center;
+    text-align: left;
+}
+.overiew .box .type{
+    color: #646777;
+    font-weight: 600;
+}
+.overiew .box b{
+    font-size: 30px;
+    color: #000;
 }
 .btn{
     grid-column: 4/5;
@@ -34,11 +96,11 @@ body{
     align-items: center;
     justify-items: right;
 }
+/*button de dark mode*/
 input[type='radio']{
     position: relative;
     width: 57px;
     height: 26px;
-    margin: 10px;
     outline: none;
     background-color: #AEB2CD;
     -webkit-appearance: none;
@@ -46,7 +108,7 @@ input[type='radio']{
     border-radius: 20px;
     transition: 0.5s;
 }
-input[type='radio']:checked{
+input[type='radio']:checked,input[type='radio']:hover{
     background:linear-gradient(to right,#4495C9,#3FCA99);
 }
 input[type='radio']::before{
@@ -65,4 +127,14 @@ input[type='radio']::before{
 input[type='radio']:checked::before{
     right: 30px;
     background:#000;
+}
+
+
+@media only screen and (max-width:800px){
+    .sociel,.overiew{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .sociel .text{
+        grid-column: 1/3;
+    }
 }
