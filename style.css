@@ -2,9 +2,12 @@
     margin: 0;
     padding: 0;
 }
+body{
+    position: relative;
+}
 header{
     width: 100%;
-    height: 35%;
+    height: 230px;
     background-color: #F8F9FE;
     border-bottom-left-radius:30px;
     border-bottom-right-radius:30px ;
@@ -22,9 +25,7 @@ header{
     position: absolute;
     padding: 20px 0;
     margin: 20px 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    left: 10%;
     font-family: sans-serif;
 }
 .sociel,.overiew{
@@ -40,6 +41,13 @@ header{
 .box:hover{
     background-color: #E1E3F0;
 }
+.boxdark{
+    background-color: #252B43 !important;
+}
+.boxdark:hover{
+    background-color: #333A56 !important;
+}
+
 .sociel .text{
     grid-column: 1/4;
 }
@@ -80,6 +88,7 @@ header{
     align-items: center;
     justify-items: center;
     text-align: left;
+    border-radius: 5px;
 }
 .overiew .box .type{
     color: #646777;
@@ -92,7 +101,7 @@ header{
 .btn{
     grid-column: 4/5;
     display: grid;
-    grid-template-columns: 1fr 35%;
+    grid-template-columns: 1fr 40%;
     align-items: center;
     justify-items: right;
 }
@@ -130,11 +139,48 @@ input[type='radio']:checked::before{
 }
 
 
+@media only screen and (max-width:1000px){
+    .overiew{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .overiew .text{
+        grid-column: 1/4; 
+    }
+}
 @media only screen and (max-width:800px){
+    .container{
+        width: 94%;
+        left: 3%;
+        font-family: sans-serif;
+    }
     .sociel,.overiew{
         grid-template-columns: repeat(2,1fr);
     }
     .sociel .text{
-        grid-column: 1/3;
+        grid-column: 1/2;
+        font-size: 13px;
+    }
+    .btn{
+        grid-column: 2/3;
+    }
+    .overiew .text{
+        grid-column: 1/3; 
+    }
+}
+@media only screen and (max-width:500px){
+    .sociel,.overiew{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .sociel .text{
+        grid-column: 1/2;
+        font-size: 13px;
+    }
+    .btn{
+        border-top: 1px solid #9EA1AF;
+        grid-column: 1/2;
+        justify-items: center;
+    }
+    .overiew .text{
+        grid-column: 1/2; 
     }
 }

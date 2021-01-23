@@ -1,15 +1,37 @@
 var btn=document.getElementById("btn");
 
-
 function darkmode(){
     if(document.body.style.backgroundColor=="rgb(255, 255, 255)"){
-        document.body.style.backgroundColor="#111"
+        document.body.style.backgroundColor="#1D2029"
         document.getElementById("text").style.color="#fff"
         document.getElementById("header").classList.add("header")
         document.getElementById("total").style.color="#8187A8";
         document.getElementById("dark").style.color="#fff"
         document.getElementById("text2").style.color="#fff"
-        document.getElementsByTagNameNS("").backgroundColor
+        document.getElementById("sbox1",).classList.add("boxdark");
+        document.getElementById("sbox2").classList.add("boxdark");
+        document.getElementById("sbox3").classList.add("boxdark");
+        document.getElementById("sbox4").classList.add("boxdark");
+        document.getElementById("obox1").classList.add("boxdark");
+        document.getElementById("obox2").classList.add("boxdark");
+        document.getElementById("obox3").classList.add("boxdark");
+        document.getElementById("obox4").classList.add("boxdark");
+        document.getElementById("obox5").classList.add("boxdark");
+        document.getElementById("obox6").classList.add("boxdark");
+        document.getElementById("obox7").classList.add("boxdark");
+        document.getElementById("obox8").classList.add("boxdark");
+        document.getElementById("stron1").style.color="#fff"
+        document.getElementById("stron2").style.color="#fff"
+        document.getElementById("stron3").style.color="#fff"
+        document.getElementById("stron4").style.color="#fff"
+        document.getElementById("b1").style.color="#fff"
+        document.getElementById("b2").style.color="#fff"
+        document.getElementById("b3").style.color="#fff"
+        document.getElementById("b4").style.color="#fff"
+        document.getElementById("b5").style.color="#fff"
+        document.getElementById("b6").style.color="#fff"
+        document.getElementById("b7").style.color="#fff"
+        document.getElementById("b8").style.color="#fff"
         btn.checked=true;
     }
     else{
@@ -20,6 +42,30 @@ function darkmode(){
         document.getElementById("total").style.color="#6E7180";
         document.getElementById("dark").style.color="#000"
         document.getElementById("text2").style.color="#000"
+        document.getElementById("sbox1").classList.remove("boxdark");
+        document.getElementById("sbox2").classList.remove("boxdark");
+        document.getElementById("sbox3").classList.remove("boxdark");
+        document.getElementById("sbox4").classList.remove("boxdark");
+        document.getElementById("obox1").classList.remove("boxdark");
+        document.getElementById("obox2").classList.remove("boxdark");
+        document.getElementById("obox3").classList.remove("boxdark");
+        document.getElementById("obox4").classList.remove("boxdark");
+        document.getElementById("obox5").classList.remove("boxdark");
+        document.getElementById("obox6").classList.remove("boxdark");
+        document.getElementById("obox7").classList.remove("boxdark");
+        document.getElementById("obox8").classList.remove("boxdark");
+        document.getElementById("stron1").style.color="#000"
+        document.getElementById("stron2").style.color="#000"
+        document.getElementById("stron3").style.color="#000"
+        document.getElementById("stron4").style.color="#000"
+        document.getElementById("b1").style.color="#000"
+        document.getElementById("b2").style.color="#000"
+        document.getElementById("b3").style.color="#000"
+        document.getElementById("b4").style.color="#000"
+        document.getElementById("b5").style.color="#000"
+        document.getElementById("b6").style.color="#000"
+        document.getElementById("b7").style.color="#000"
+        document.getElementById("b8").style.color="#000"
         btn.checked=false;
     }
 }
